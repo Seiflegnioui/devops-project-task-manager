@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Task Manager</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Dynamic Background -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main App Container -->
+    <div class="container glass-panel">
+        <header>
+            <h1><i class="fa-solid fa-list-check"></i> Task Manager</h1>
+            <p>Master DevOps Project</p>
+        </header>
+
+        <main>
+            <div class="add-task-container">
+                <form id="task-form">
+                    <input type="text" id="task-title" placeholder="What needs to be done?" required autocomplete="off">
+                    <button type="submit" class="btn-primary">
+                        <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                </form>
+            </div>
+
+            <div class="tasks-container">
+                <div class="tasks-header">
+                    <h2>Your Tasks</h2>
+                    <span id="task-count" class="badge">0</span>
+                </div>
+                
+                <div id="loading" class="loading-spinner">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i> Loading tasks...
+                </div>
+                
+                <ul id="task-list" class="task-list">
+                    <!-- Tasks will be inserted dynamically via JS -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
