@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+terraform.exe
+id_rsa_devops
+id_rsa_devops.pub
+
+# Kubernetes
+kubeconfig.yaml
+kubectl
+
+# Python
+__pycache__/
+*.pyc
+.venv/
