@@ -56,7 +56,6 @@ jobs:
         
     - name: Update Deployment Image (Force Restart)
       run: |
-        # Replace the placeholder with actual Dockerhub username
         sed -i "s/seiflegnioui/${{ secrets.DOCKER_USERNAME }}/g" kubernetes/deployment.yaml
         
     - name: Deploy to K3s Cluster
